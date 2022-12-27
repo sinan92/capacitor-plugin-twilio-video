@@ -1,10 +1,12 @@
-#import <UIKit/UIKit.h>
+#import <Cordova/CDV.h>
+#import "TwilioVideoViewController.h"
+#import "TwilioVideoConfig.h"
+#import "TwilioVideoManager.h"
+#import "TwilioVideoJsonConverter.h"
 
-//! Project version number for Plugin.
-FOUNDATION_EXPORT double PluginVersionNumber;
+@interface TwilioVideoPlugin : CDVPlugin<TwilioVideoEventProducerDelegate>
 
-//! Project version string for Plugin.
-FOUNDATION_EXPORT const unsigned char PluginVersionString[];
+@property NSString *listenerCallbackID;
 
-// In this header, you should import all the public headers of your framework using statements like #import <Plugin/PublicHeader.h>
+@end
 
